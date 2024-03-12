@@ -1,10 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Portfolio from "./Components/portfolio";
+
+import Portfolio from "./components/portfolio";
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main >
       <Portfolio/>
     </main>
   );

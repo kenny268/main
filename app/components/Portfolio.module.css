@@ -1,0 +1,904 @@
+/* Styles for fully golden stars */
+.gold {
+    color: gold;
+  }
+
+/* Styles for partially golden stars */
+.partial {
+    position: relative;
+    color: rgb(240, 238, 227); /* Set the color to gold */
+    width: 16px; /* Adjust the width of the star icon */
+    height: 16px; /* Adjust the height of the star icon */
+  }
+
+  @media only screen and (max-width: 980px){
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        top: 0;
+        padding: 0;
+        margin:0;
+        box-shadow: 0px 0px 1px 2px #3333335b;
+        border-bottom-right-radius:2%;
+        border-bottom-left-radius:2%;
+    
+    }
+    .me{
+        position: relative;
+        margin-top: 200px;
+        flex: 1;
+    }
+    
+    .me h1{
+        font-size: 2em;
+        font-weight: 700;
+        color: #000;
+        flex: 1;
+    } 
+
+    .me h3{
+        font-size: 1.3em;
+        font-weight: 700;
+        text-align: center;
+        color: #000;
+        flex: 1;
+    }
+
+    .img{
+        top: 0px;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+        border-bottom-right-radius:20%;
+        border-bottom-left-radius:20%;
+        width: 100%;
+        flex: 3;
+        padding: 20px 20px -2px 20px;
+
+    }
+
+    .img .imgLight{
+        top: 20px;
+        position: relative;
+        border-radius: 50%;
+        flex: 3;
+        padding: 2px;
+        background-color: azure;
+    }
+
+    .socialHandles{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+    }
+    .socialHandles svg{
+        width: 30px;
+        height: 30px;
+    }
+    .socialHandles .linkedin{
+        color: rgb(37, 37, 230);
+    }
+    .socialHandles .twitter {
+        color: rgb(12, 12, 12);
+    }
+    .socialHandles .github{
+        color: rgb(12, 12, 12);
+    }
+
+    .aboutMe{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        margin: 10px 9px;
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    .aboutMe h2{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding: 2px 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    }
+    .aboutMe p{
+        font-size: 1em;
+        font-weight: 400;
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding: 2px 6px;
+        text-align: justify;
+    }
+    .skills{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        margin: 10px 9px;
+        padding: 4px;
+    }
+    .skills h2{
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding: 2px 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    }
+    .skills ul{
+        display: flex;
+        flex-direction: row;;
+        align-items:flex-start;
+        justify-content: space-between;
+        margin: 1px 0 0 2px;
+        padding: 2px 2px;
+        list-style: none;
+    }
+
+    .skills ul div li{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1px 0 0 2px;
+        padding: 0;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .projects{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        margin: 10px 9px;
+        padding: 4px;
+        border-radius: 5px;
+    }
+    .projects h2{
+        font-size: 1.5em;
+        font-weight: 700;   
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding: 2px 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    }
+    
+    
+    .projects div div{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1px 0 0 2px;
+        padding: 0;
+        font-size: 1em;
+        font-weight: 600;
+               
+    }
+    .projects div h3{
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .projects div .imgProject{
+        width: 300px;
+        height: 200px;
+    }
+    .projects div .imgProject:hover{
+        width: 310px;
+        height: 205px;
+        transition: transform 0.5s ease;
+    }
+
+    .contact{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        margin: 10px 9px;
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    .contact h2{
+        font-size: 1.5em;
+        font-weight: 700;   
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding: 2px 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    }
+
+    .contact .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1px 0 0 2px;
+        padding: 10px;
+        font-size: 1em;
+        font-weight: 600;
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.1);
+       
+    }
+
+    .contact form div{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 5px;
+        width: 90%;
+        
+    }
+    .contact form div label{
+        padding: 2px;
+        flex: 1;
+        font-size: 1.3em;
+    }
+    .contact form div input{
+        flex: 3;
+        padding: 2px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin: 1px 0 0 2px;
+        font-size: 1em;
+    }
+    .contact form div input:focus{
+        flex: 3;
+        padding: 4px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin: 1px 0 0 2px;
+        outline: none;
+    }
+    .contact form div textarea{
+        flex: 3;
+
+    }
+    .contact form div textarea:focus{
+        flex: 3;
+        padding: 10px;
+        height: 100px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin: 1px 0 0 2px;
+        outline: none;
+        text-align: left;
+        font-size: 1.4em;
+    }
+    .experiences{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        margin: 10px 9px;
+        padding: 4px;
+        border-radius: 5px;
+    }
+    .experiences h2{
+        font-size: 1.5em;
+        font-weight: 700;   
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding: 2px 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    }
+    .experiences div{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.2);
+        margin: 10px 9px;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+    .experiences div h3{
+        font-size: 1.4em;
+        font-weight: 700;   
+        color: #000;
+        margin: 1px 0 0 2px;
+    
+    }
+    .experiences div p{
+        font-size:1.19em ;
+        font-weight: 560;
+    }
+    .experiences div ul li{
+        font-size:1.1em ;
+        font-weight: 500;
+    }
+    .experiences div button{
+        position: relative;
+        left: 2px;
+        top: 2px;
+        
+
+    }
+    .languages{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        margin: 10px 9px;
+        padding: 4px;
+        border-radius: 5px;
+    }
+    .languages h2{
+        font-size: 1.5em;
+        font-weight: 700;   
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding: 2px 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    }
+    .languages ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1px 0 0 2px;
+        padding: 0;
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .languages ul li{
+        list-style: none;
+        font-size: 1.3em;
+        padding: 10px;
+    }
+    .educations{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        margin: 10px 9px;
+        padding: 4px;
+        border-radius: 5px;
+    }
+    .educations h2{
+        font-size: 1.5em;
+        font-weight: 700;   
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding: 2px 6px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    }
+    .educations .degreeCard{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.1);
+        margin: 10px 9px;
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    .educations .degreeCard h3{
+        font-size: 1.4em;
+        font-weight: 600;   
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding-top: 4px;
+        padding-left: 10px;
+    }
+    .educations .degreeCard h4{
+        font-size: 1.25em;
+        font-weight: 570;   
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding-top: 3px;
+        padding-left: 10px;
+    }
+    .educations .degreeCard h5{
+        font-size: 1.15em;
+        font-weight: 550;   
+        color: #000;
+        margin: 1px 0 0 2px;
+        padding-top: 2px;
+        padding-left: 10px;
+    }
+    .footer{
+        position: relative;
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        padding-top: 20px;
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(59, 58, 58);
+    }
+
+    .footer a{
+        margin: 10px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 10px;
+        background-color: rgb(182, 108, 12);
+        border-radius: 5px;
+    }
+
+    .footer p{
+        text-align: center;
+        color: #fff;
+        font-size: 1.3em;
+    }
+    
+   
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+}
+.header .me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.1);
+    margin: 10px 9px;
+    border-radius: 5px;
+    flex:1;
+}
+.header .me h1{
+    font-size: 3em;
+    font-weight: 700;
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 2px 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.header .me h3{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 10px 6px;
+}
+
+.header .img .imgLight{
+    flex: 1;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px 0 0 10px;
+}
+
+.header .socialHandles{
+    flex:0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .socialHandles p{
+    margin: 10px 0 0 10px;
+    
+}
+.header .socialHandles .linkedin{
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(42, 42, 224);
+}
+
+.header .socialHandles .twitter{
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(15, 15, 15);
+
+}
+.header .socialHandles .github{
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(10, 10, 10);
+}
+
+.about{
+    background-color: #f8f3f3;
+}
+
+
+.aboutMe{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:start;
+    width: 80%;
+    margin:10px auto;
+    padding: 20px;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+
+}
+.aboutMe h2{
+    font-size: 3.5em;    
+    font-weight: 700;
+    color: #000;
+    margin: 1px 0 0 2px;
+}
+.aboutMe p{
+    font-size: 2em;
+    font-weight: 500;
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 2px;    
+
+}
+.skills{
+    width: 80%;   
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    margin:10px auto;
+    padding: 10px;
+    
+}
+.skills h2{
+    font-size: 3.5em;    
+    font-weight: 700;
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 2px 6px;
+    text-align: center;
+    
+}
+.skills div{
+    display: flex;
+    flex-direction: row;;
+    align-items:start;   
+    justify-content: space-evenly;
+    margin: 1px 0 0 2px;
+    list-style: none;
+   
+}
+
+.skills div div{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+   
+}
+ 
+.skills div div p{
+    display: flex;
+    flex-direction: column; 
+    padding: 2px;
+    
+}
+.skills div div {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.projects{
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 80%;
+    padding: 15px;
+    
+}
+.projects h2{
+    font-size: 3em;
+    font-weight: 700;   
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 2px 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.projects  div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 1px 0 0 2px;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 600;
+           
+}
+.projects div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 1px 0 0 2px;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 600;
+           
+}
+.projects div h3{
+    text-align: center;
+    font-size: 1.4em;
+}
+.projects div .imgProject{
+    max-width: 410pxpx;
+    max-height: 405px;
+    width: 408px;
+    height: 403px;
+    overflow: hidden;
+}
+.projects div .imgProject:hover{
+    width: 410px;
+    height: 405px;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+
+    
+}
+
+.contact{
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    padding: 4px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.contact h2{
+    font-size: 3em;
+    font-weight: 700;   
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 2px 6px;
+    text-align: center;
+}
+
+.contact .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    width: 40%;
+    height: 40vh;
+   
+}
+
+.contact form div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 5px;
+    width: 90%;
+    
+}
+.contact form div label{
+    padding: 2px;
+    flex: 1;
+    font-size: 1.3em;
+}
+.contact form div input{
+    flex: 3;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 1px 0 0 2px;
+    font-size: 1em;
+}
+
+.contact .form input[type="submit"] {
+   background-color: rgb(66, 66, 212);
+   border: none;
+   color: white;
+   padding: 6px 8px;
+   text-align: center;
+   border-radius: 2px;
+   font-size: 1.5em;
+}
+.contact form div input:focus{
+    flex: 3;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 1px 0 0 2px;
+    outline: none;
+}
+.contact form div textarea{
+    flex: 3;
+
+}
+.contact form div textarea:focus{
+    flex: 3;
+    padding: 10px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 1px 0 0 2px;
+    outline: none;
+    text-align: left;
+    font-size: 1.4em;
+}
+.experiences{
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.experiences h2{
+    font-size: 3em;
+    font-weight: 700;   
+    text-align: center;
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 2px 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+.experiences div{
+    margin: 10px 9px;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.experiences div .myExperiences{
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.2);
+    margin: 10px 9px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.experiences div .myExperiences h3{
+    font-size: 1.9em;
+    font-weight: 700;   
+    color: #000;
+    margin: 1px 0 0 2px;
+
+}
+.experiences div .myExperiences p{
+    font-size:1.6em ;
+    font-weight: 560;
+}
+.experiences div .myExperiences ul li{
+    font-size:1.5em ;
+    font-weight: 500;
+    list-style:circle;
+}
+.experiences div .myExperiences .buttonReadmore{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: flex-end;
+    
+}
+.experiences .myExperiences .buttonReadmore .button{
+    width: 20%;
+    margin: 1px;
+
+}
+.languages{
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.languages h2{
+    font-size: 3em;
+    font-weight: 700;   
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 2px 6px;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+.languages ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1px 0 0 2px;
+    padding: 0;
+    font-size: 1em;
+    font-weight: 600;
+}
+.languages ul li{
+    list-style: none;
+    font-size: 1.5em;
+    padding: 10px;
+}
+.educations{
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.educations h2{
+    font-size: 3em;
+    font-weight: 700; 
+    text-align: center;  
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding: 2px 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+.educations .degreeCard{
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.1);
+    margin: 10px 9px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.educations .degreeCard h3{
+    font-size: 1.9em;
+    font-weight: 600;   
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding-top: 4px;
+    padding-left: 10px;
+}
+.educations .degreeCard h4{
+    font-size: 1.6em;
+    font-weight: 570;   
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding-top: 3px;
+    padding-left: 10px;
+}
+.educations .degreeCard h5{
+    font-size: 1.4em;
+    font-weight: 550;   
+    color: #000;
+    margin: 1px 0 0 2px;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+.footer{
+    position: relative;
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    padding-top: 20px;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(59, 58, 58);
+}
+
+.footer a{
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgb(182, 108, 12);
+    border-radius: 5px;
+}
+
+.footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 1.3em;
+}
+
+   
+  }

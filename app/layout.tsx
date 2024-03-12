@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -12,7 +13,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      
+      <body className={styles.main}>{children}</body>
     </html>
   );
 }
