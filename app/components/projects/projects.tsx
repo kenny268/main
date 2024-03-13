@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import styles from '@/app/components/Portfolio.module.css'
+import LazyBackground from '@/app/components/optimizations/lazyloading'
+
 
 
 interface Project {
@@ -38,9 +40,11 @@ interface Project {
 
 const Projects: React.FC = () => {
   return (
-    <div className={styles.projects}>
+    <LazyBackground className={styles.projects} imageUrl="">
         <h2>Projects</h2>
+        
       <div>  
+        
         {projects.map((project, index) => (
             <div key={index}>
             <a href={project.githubUrl} target="_blank" rel="noreferrer"></a>
@@ -59,7 +63,7 @@ const Projects: React.FC = () => {
         </div>
       ))}
       </div>
-    </div>
+    </LazyBackground>
   );
 };
  

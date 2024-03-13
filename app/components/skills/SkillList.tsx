@@ -12,7 +12,7 @@ const SkillList: React.FC<SkillListProps> = ({ skills }) => {
     <p>
       {skills.map(({ skill, rating }) => (
         <span key={skill}>
-            
+          
             {skill}
               
             {[...Array(5)].map((_, index) => (

@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useRef } from 'react';
 import styles from './Portfolio.module.css'
 import Skills from "@/app/components/skills/skills";
 import { ContactUs } from './contuctUs/ContactUs';
@@ -8,21 +9,28 @@ import Footer from './footer/footer';
 import AboutMe from './aboutMe/aboutMe';
 import Experiences from './experiences/experiences';
 import Header from './header/header';
+import LazyBackground from './optimizations/lazyloading';
+
 
 function Portfolio() {
 
   return (
     <>
+      <LazyBackground className={styles.headerWrapper} imageUrl="/human-hand-typing-computer-keyboard-night-generated-by-ai.jpgs">
         <Header/>
-        <div className={styles.about}>
-            <AboutMe/>
-            <Skills/>
-            <Projects/>
-            <ContactUs/>
-            <Experiences/>
-            <Educations/>               
-        </div>
-        <Footer/>       
+        <AboutMe/>
+        
+      </LazyBackground>
+        
+      <div className={styles.about}>
+          
+        <Skills/>
+        <Projects/>
+        <Experiences/>
+        <ContactUs/>
+        <Educations/>               
+      </div>
+      <Footer/>       
     </>
   )
 }

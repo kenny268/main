@@ -1,3 +1,4 @@
+/*  */
 /* Styles for fully golden stars */
 .gold {
     color: gold;
@@ -422,18 +423,28 @@
 
 
 @media only screen and (min-width: 1025px) {
+.headerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    height: 100vh;
+    padding-bottom:4vh;
+    margin: 4vh auto;
+    border-radius: 1%;
+    background-image: linear-gradient( rgba(17, 17, 17), rgba(77, 73, 73, 0.5)), url("/human-hand-typing-computer-keyboard-night-generated-by-ai.jpg");
+    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
-    border-radius: 20px;
-    width: 80%;
-    margin: auto;
+    width: 100%;
 }
 .header .me{
     display: flex;
@@ -441,36 +452,33 @@
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.1);
-    margin: 10px 9px;
-    border-radius: 5px;
+    box-shadow: 5px 5px 20px 1px rgba(240, 239, 239, 0.1);
     flex:1;
 }
 .header .me h1{
     font-size: 3em;
     font-weight: 700;
-    color: #000;
+    color: #ffffff;
     margin: 1px 0 0 2px;
     padding: 2px 6px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(238, 230, 230, 0.8);
 }
 
 .header .me h3{
     font-size: 1.4em;
     font-weight: 700;
-    color: #000;
     margin: 1px 0 0 2px;
     padding: 10px 6px;
+    color: #ffffff;
 }
 
 .header .img .imgLight{
     flex: 1;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    border-bottom-left-radius: 1%;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
-    margin: 10px 0 0 10px;
+    margin: 0px 0 0 10px;
 }
 
 .header .socialHandles{
@@ -479,32 +487,48 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
 }
 
 .header .socialHandles p{
     margin: 10px 0 0 10px;
+
     
 }
 .header .socialHandles .linkedin{
     font-size: 2em;
     font-weight: 600;
-    color: rgb(42, 42, 224);
+    color: rgb(241, 241, 243);
+    text-decoration: none;
 }
 
 .header .socialHandles .twitter{
     font-size: 2em;
     font-weight: 600;
-    color: rgb(15, 15, 15);
+    color: rgb(230, 223, 223);
+    text-decoration: none;
 
 }
 .header .socialHandles .github{
     font-size: 2em;
     font-weight: 600;
-    color: rgb(10, 10, 10);
+    color: rgb(224, 219, 219);
+    text-decoration: none;
+}
+.header .socialHandles .github:hover  {
+    transform: scale(1.1);
+    font-size: 2.1em;
 }
 
-.about{
-    background-color: #f8f3f3;
+.header .socialHandles .twitter:hover{
+    transform: scale(1.1);
+    font-size: 2.1em;
+
+}
+.header .socialHandles .linkedin:hover{
+    transform: scale(1.1);
+    font-size: 2.1em;
+
 }
 
 
@@ -515,21 +539,20 @@
     align-items: flex-start;
     justify-content:start;
     width: 80%;
-    margin:10px auto;
-    padding: 20px;
-    box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    box-shadow: 5px 5px 20px 1px rgba(228, 222, 222, 0.14);
+    padding: 10px;
 
 }
 .aboutMe h2{
     font-size: 3.5em;    
     font-weight: 700;
-    color: #000;
+    color: #ffffff;
     margin: 1px 0 0 2px;
 }
 .aboutMe p{
     font-size: 2em;
     font-weight: 500;
-    color: #000;
+    color: #ffffff;
     margin: 1px 0 0 2px;
     padding: 2px;    
 
@@ -539,12 +562,16 @@
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
     margin:10px auto;
     padding: 10px;
+    height: 80vh;
+    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .skills h2{
     font-size: 3.5em;    
     font-weight: 700;
-    color: #000;
+    color: #ffffff;
     margin: 1px 0 0 2px;
     padding: 2px 6px;
     text-align: center;
@@ -557,6 +584,7 @@
     justify-content: space-evenly;
     margin: 1px 0 0 2px;
     list-style: none;
+    
    
 }
 
@@ -564,13 +592,16 @@
     display: flex;
     flex-direction: column;
     list-style: none;
+    
    
 }
  
 .skills div div p{
     display: flex;
     flex-direction: column; 
-    padding: 2px;
+    padding: 10px;
+    color:#ffffff;
+    font-size: 1.5em;
     
 }
 .skills div div {
@@ -582,20 +613,23 @@
     font-weight: 600;
 }
 .projects{
+    width: 80%;   
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
-    margin: 10px auto;
-    border-radius: 5px;
-    width: 80%;
-    padding: 15px;
+    margin:10px auto;
+    padding: 10px;
+    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/projects.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .projects h2{
     font-size: 3em;
     font-weight: 700;   
-    color: #000;
+    color: #ffffff;
     margin: 1px 0 0 2px;
+    text-align: center;
     padding: 2px 6px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    /* border-bottom: 1px solid rgba(226, 220, 220, 0.8); */
 }
 
 .projects  div{
@@ -606,7 +640,6 @@
     justify-content: space-between;
     margin: 1px 0 0 2px;
     padding: 0;
-    font-size: 1em;
     font-weight: 600;
            
 }
@@ -616,20 +649,19 @@
     align-items: flex-start;
     justify-content: space-around;
     margin: 1px 0 0 2px;
-    padding: 0;
-    font-size: 1em;
     font-weight: 600;
            
 }
 .projects div h3{
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.9em;
+    color: #ffffff;
 }
 .projects div .imgProject{
-    max-width: 410pxpx;
-    max-height: 405px;
-    width: 408px;
-    height: 403px;
+    max-width: 350pxpx;
+    max-height: 350px;
+    width: 349px;
+    height: 349px;
     overflow: hidden;
 }
 .projects div .imgProject:hover{
@@ -642,17 +674,22 @@
 }
 
 .contact{
+    width: 80%;   
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
-    padding: 4px;
-    border-radius: 5px;
-    width: 80%;
-    margin: 10px auto;
+    margin:10px auto;
+    padding: 10px;
+    height: 80vh;
+    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/contactus.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
 }
 
 .contact h2{
     font-size: 3em;
     font-weight: 700;   
-    color: #000;
+    color: #ffffff;
     margin: 1px 0 0 2px;
     padding: 2px 6px;
     text-align: center;
@@ -668,8 +705,7 @@
     font-size: 1em;
     font-weight: 600;
     width: 40%;
-    height: 40vh;
-   
+    height: 60vh;
 }
 
 .contact form div{
@@ -684,7 +720,8 @@
 .contact form div label{
     padding: 2px;
     flex: 1;
-    font-size: 1.3em;
+    font-size: 2em;
+    color: #ffffff;
 }
 .contact form div input{
     flex: 3;
@@ -692,7 +729,9 @@
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.8);
     margin: 1px 0 0 2px;
-    font-size: 1em;
+    height: 36px;
+    font-size: 1.5em;
+
 }
 
 .contact .form input[type="submit"] {
@@ -704,6 +743,7 @@
    border-radius: 2px;
    font-size: 1.5em;
 }
+
 .contact form div input:focus{
     flex: 3;
     padding: 4px;
@@ -714,6 +754,7 @@
 }
 .contact form div textarea{
     flex: 3;
+
 
 }
 .contact form div textarea:focus{
@@ -728,10 +769,13 @@
     font-size: 1.4em;
 }
 .experiences{
+    width: 80%;   
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+    margin:10px auto;
     padding: 10px;
-    border-radius: 5px;
-    width: 80%;
+    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/experiences.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
@@ -740,7 +784,7 @@
     font-size: 3em;
     font-weight: 700;   
     text-align: center;
-    color: #000;
+    color: #ffffff;
     margin: 1px 0 0 2px;
     padding: 2px 6px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.8);
@@ -767,18 +811,20 @@
 .experiences div .myExperiences h3{
     font-size: 1.9em;
     font-weight: 700;   
-    color: #000;
+    color: #ffffff;
     margin: 1px 0 0 2px;
 
 }
 .experiences div .myExperiences p{
     font-size:1.6em ;
+    color: #ffffff;
     font-weight: 560;
 }
 .experiences div .myExperiences ul li{
     font-size:1.5em ;
     font-weight: 500;
     list-style:circle;
+    color: #ffffff;
 }
 .experiences div .myExperiences .buttonReadmore{
     display: flex;
@@ -798,7 +844,7 @@
     border-radius: 5px;
     width: 80%;
     margin: 10px auto;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .languages h2{
@@ -831,7 +877,7 @@
     border-radius: 5px;
     width: 80%;
     margin: 10px auto;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 .educations h2{
@@ -901,4 +947,4 @@
 }
 
    
-  }
+}

@@ -2,6 +2,8 @@ import styles from '@/app/components/Portfolio.module.css'
 
 import React from 'react'
 import SkillList from '@/app/components/skills/SkillList';
+import LazyBackground from "@/app/components/optimizations/lazyloading";
+
 
 export default function Skills() {
 
@@ -56,12 +58,12 @@ const secondHalfList = (
 );
 
   return (
-    <div className={styles.skills}>
+    <LazyBackground className={styles.skills} imageUrl="/bg.jpg">
                 <h2>Skills</h2>
                 <div>                    
                         {firstHalfList}
                         {secondHalfList}                                  
                 </div>
-            </div>
+    </LazyBackground>
   )
 }

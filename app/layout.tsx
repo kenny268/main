@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import styles from "./page.module.css";
+import '@/app/global.css'
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={styles.main}>{children}</body>
+      <body className={`${styles.main} madimi-one-regular`}>{children}</body>
     </html>
   );
 }
