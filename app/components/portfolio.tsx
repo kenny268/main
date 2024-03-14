@@ -1,14 +1,14 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
-import styles from './Portfolio.module.css'
+import styles from '@/app/components/Portfolio.module.css'
 import Skills from "@/app/components/skills/skills";
-import { ContactUs } from './contuctUs/ContactUs';
-import Projects from './projects/projects';
-import Educations from './educations/educations';
-import Footer from './footer/footer';
-import AboutMe from './aboutMe/aboutMe';
-import Experiences from './experiences/experiences';
-import Header from './header/header';
+import { ContactUs } from '@/app/components/contuctUs/ContactUs';
+import Projects from '@/app/components/projects/projects';
+import Educations from '@/app/components/educations/educations';
+import Footer from '@/app/components/footer/footer';
+import AboutMe from '@/app/components/aboutMe/aboutMe';
+import Experiences from '@/app/components/experiences/experiences';
+import Header from '@/app/components/header/header';
 
 function Portfolio() {
 

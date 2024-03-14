@@ -17,7 +17,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: start;
+        justify-content: flex-start;
         width: 100%;
         padding-bottom:4vh;
         margin: 2px auto;
@@ -188,7 +188,7 @@
     .skills div div p{
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         justify-content: space-evenly;   
         font-size: 1em;
         color: #d3cdcd;
@@ -412,7 +412,7 @@
     .experiences div .myExperiences .buttonReadmore{
         display: flex;
         flex-direction: row;
-        align-items: end;
+        align-items: flex-end;
         justify-content: flex-end;
         
     }
@@ -533,7 +533,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     width: 80%;
     height: 100vh;
     padding-bottom:4vh;
@@ -643,7 +643,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content:start;
+    justify-content:flex-start;
     width: 80%;
     box-shadow: 5px 5px 20px 1px rgba(228, 222, 222, 0.14);
     padding: 10px;
@@ -686,7 +686,7 @@
 .skills div{
     display: flex;
     flex-direction: row;;
-    align-items:start;   
+    align-items:flex-start;   
     justify-content: space-evenly;
     margin: 1px 0 0 2px;
     list-style: none;
@@ -935,7 +935,7 @@
 .experiences div .myExperiences .buttonReadmore{
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     justify-content: flex-end;
     
 }
