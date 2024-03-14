@@ -1,5 +1,4 @@
 import styles from "@/app/components/Portfolio.module.css"
-import Link from "next/link";
 const Footer = () => {
     return (   
     

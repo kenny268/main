@@ -1,7 +1,6 @@
 'use client'
 import styles from "@/app/components/Portfolio.module.css"
 import React, { useState } from 'react';
-import LazyBackground from "@/app/components/optimizations/lazyloading";
 
 
 interface Experience {
@@ -55,7 +54,7 @@ const Experiences = () => {
   };
     return (
         <>
-        <LazyBackground className={styles.experiences} imageUrl="/experiences.jpeg">
+        <div className={styles.experiences} >
         <h2>Experiences</h2>
         <div >
         {experiences.map((experience, index) => (
@@ -78,7 +77,7 @@ const Experiences = () => {
         </div>
       ))}
       </div>
-        </LazyBackground>
+        </div>
         <div className={styles.languages}>
                 <h2>Languages</h2>
                 <ul>

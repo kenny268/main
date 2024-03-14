@@ -15,12 +15,12 @@ const SkillList: React.FC<SkillListProps> = ({ skills }) => {
           
             {skill}
               
-            {[...Array(5)].map((_, index) => (
-            <span key={index}  className={getStarClass(index, rating)}>
-                <BsFillStarFill />
-            </span>
-            ))}
-            
+              {[...Array(5)].map((_, index) => (
+              <span key={index}  className={getStarClass(index, rating)}>
+                  <BsFillStarFill />
+              </span>
+              ))}
+          
          </span> 
         
       ))}

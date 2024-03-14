@@ -2,7 +2,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from "@/app/components/Portfolio.module.css"
-import LazyBackground from "@/app/components/optimizations/lazyloading";
 
 export const ContactUs: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -27,7 +26,7 @@ export const ContactUs: React.FC = () => {
   };
 
   return (
-    <LazyBackground className={styles.contact} imageUrl="/contactus.jpg">
+    <div className={styles.contact} >
       <h2>Contact</h2>
       <form className={styles.form} ref={form} onSubmit={sendEmail}>
         <div>
@@ -39,12 +38,12 @@ export const ContactUs: React.FC = () => {
           <input type="email" name="user_email" />
         </div>
         <div>
-        <label>Message</label>
-        <textarea name="message" />
+          <label>Message</label>
+          <textarea name="message" />
         </div>
         
         <input type="submit" value="Send" />
       </form>
-    </LazyBackground>
+    </div>
   );
 };

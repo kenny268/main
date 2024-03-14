@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from '@/app/components/Portfolio.module.css'
-import LazyBackground from '@/app/components/optimizations/lazyloading'
 
 
 
@@ -32,6 +31,12 @@ interface Project {
       githubUrl: 'https://www.linkedin.com/in/kennedykiprono/',
     },
     {
+      name: 'My portfolio',
+      imageUrl: '/portfolio.png',
+      githubUrl: 'https://www.linkedin.com/in/kennedykiprono/',
+    }
+    ,
+    {
       name: 'HTML CSS Ecomerce Projact',
       imageUrl: '/myfirstweb.png',
       githubUrl: 'https://www.linkedin.com/in/kennedykiprono/',
@@ -40,7 +45,7 @@ interface Project {
 
 const Projects: React.FC = () => {
   return (
-    <LazyBackground className={styles.projects} imageUrl="">
+    <div className={styles.projects} >
         <h2>Projects</h2>
         
       <div>  
@@ -53,8 +58,8 @@ const Projects: React.FC = () => {
                 <Image
                     src={project.imageUrl}
                     alt="Project Image"
-                    width={200}
-                    height={200}
+                    width={120}
+                    height={120}
                     className={styles.imgProject}
                     priority={true}
                 />
@@ -63,7 +68,7 @@ const Projects: React.FC = () => {
         </div>
       ))}
       </div>
-    </LazyBackground>
+    </div>
   );
 };
  

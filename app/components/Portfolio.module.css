@@ -12,7 +12,21 @@
     height: 16px; /* Adjust the height of the star icon */
   }
 
-  @media only screen and (max-width: 980px){
+  @media only screen and (max-width: 999px){
+    .headerWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        padding-bottom:4vh;
+        margin: 2px auto;
+        border-radius: 1%;
+        background-image: linear-gradient( rgba(17, 17, 17), rgba(77, 73, 73, 0.5)), url("/human-hand-typing-computer-keyboard-night-generated-by-ai.webp");
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .header{
         display: flex;
@@ -31,14 +45,14 @@
     }
     .me{
         position: relative;
-        margin-top: 200px;
+        margin-top: 330px;
         flex: 1;
     }
     
     .me h1{
         font-size: 2em;
         font-weight: 700;
-        color: #000;
+        color: #ffffff;
         flex: 1;
     } 
 
@@ -46,7 +60,7 @@
         font-size: 1.3em;
         font-weight: 700;
         text-align: center;
-        color: #000;
+        color: #ffffff;
         flex: 1;
     }
 
@@ -57,11 +71,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: blue;
-        border-bottom-right-radius:20%;
-        border-bottom-left-radius:20%;
+        background-image: linear-gradient(rgba(30, 30, 31, 0.8),rgba(209, 209, 219, 0.5));
+        border-bottom-right-radius:10%;
+        border-bottom-left-radius:10%;
         width: 100%;
         flex: 3;
+        height: 30vh;
         padding: 20px 20px -2px 20px;
 
     }
@@ -72,6 +87,8 @@
         border-radius: 50%;
         flex: 3;
         padding: 2px;
+        width: 170;
+        height: 170;
         background-color: azure;
     }
 
@@ -80,25 +97,39 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        width: 40%;
+        justify-content: space-around;
+        width: 80%;
+        
     }
     .socialHandles svg{
         width: 30px;
         height: 30px;
     }
     .socialHandles .linkedin{
-        color: rgb(37, 37, 230);
+        color: rgb(226, 226, 236);
+        font-size: 1.2em;
+        text-decoration: none;
     }
-    .socialHandles .twitter {
-        color: rgb(12, 12, 12);
-    }
-    .socialHandles .github{
-        color: rgb(12, 12, 12);
+    .socialHandles .linkedin span{
+        font-size: 0.8em;
     }
 
+    .socialHandles .twitter {
+        color: rgb(248, 242, 242);
+        text-decoration: none;
+    }
+    .socialHandles .github{
+        color: rgb(240, 234, 234);
+        text-decoration: none;
+        font-size: 1.4em;
+    }
+    .socialHandles .github span{
+        font-size: 0.7em;
+    }
+
+
     .aboutMe{
-        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        box-shadow: 5px 5px 20px 1px rgba(236, 230, 230, 0.3);
         margin: 10px 9px;
         padding: 4px;
         border-radius: 5px;
@@ -107,7 +138,7 @@
     .aboutMe h2{
         font-size: 1.5em;
         font-weight: 700;
-        color: #000;
+        color: #ffffff;
         margin: 1px 0 0 2px;
         padding: 2px 6px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.8);
@@ -115,7 +146,7 @@
     .aboutMe p{
         font-size: 1em;
         font-weight: 400;
-        color: #000;
+        color: #d3cdcd;
         margin: 1px 0 0 2px;
         padding: 2px 6px;
         text-align: justify;
@@ -124,52 +155,80 @@
         box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
         margin: 10px 9px;
         padding: 4px;
+        background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .skills h2{
         font-size: 1.5em;
         font-weight: 700;
-        color: #000;
+        color: #d3cdcd;
         margin: 1px 0 0 2px;
         padding: 2px 6px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.8);
     }
-    .skills ul{
-        display: flex;
-        flex-direction: row;;
-        align-items:flex-start;
-        justify-content: space-between;
-        margin: 1px 0 0 2px;
-        padding: 2px 2px;
-        list-style: none;
-    }
-
-    .skills ul div li{
+    .skills div{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin: 1px 0 0 2px;
-        padding: 0;
+        padding: 2px 2px;
+        list-style: none;
+        color: #d3cdcd;
+    }
+
+    .skills div div{
+        
+        margin: 1px 0 0 2px;
+        padding: 2px 2px;
+        flex-wrap: nowrap;
+        
+    }
+    .skills div div p{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;   
         font-size: 1em;
-        font-weight: 600;
+        color: #d3cdcd;
+        font-weight: 400;
+        flex-wrap: nowrap;
+
+    }
+    .skills div div p span span svg{
+        font-size: 0.9em;
     }
 
     .projects{
         box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
-        margin: 10px 9px;
-        padding: 4px;
-        border-radius: 5px;
+        margin:10px auto;
+        padding: 10px;
+        background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/projects_1.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
     }
     .projects h2{
         font-size: 1.5em;
         font-weight: 700;   
-        color: #000;
+        color: #ffffff;
         margin: 1px 0 0 2px;
         padding: 2px 6px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.8);
     }
     
-    
+    .projects div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1px 0 0 2px;
+        padding: 2px 2px;
+        list-style: none;
+        color: #d3cdcd;
+    }
     .projects div div{
 
         display: flex;
@@ -185,6 +244,7 @@
     .projects div h3{
         text-align: center;
         font-size: 1.4em;
+        color: #ffffff;
     }
     .projects div .imgProject{
         width: 300px;
@@ -196,48 +256,50 @@
         transition: transform 0.5s ease;
     }
 
-    .contact{
+    .contact{ 
         box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
-        margin: 10px 9px;
-        padding: 4px;
-        border-radius: 5px;
+        margin:10px auto;
+        padding: 10px;
+        background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/contactus.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-
+    
     .contact h2{
-        font-size: 1.5em;
+        font-size: 3em;
         font-weight: 700;   
-        color: #000;
+        color: #ffffff;
         margin: 1px 0 0 2px;
         padding: 2px 6px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+        text-align: center;
     }
-
+    
     .contact .form{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        margin: 1px 0 0 2px;
+        margin: auto;
         padding: 10px;
         font-size: 1em;
         font-weight: 600;
-        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.1);
-       
+        width: 40%;
+        height: 60vh;
     }
-
+    
     .contact form div{
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 5px;
-        width: 90%;
         
     }
     .contact form div label{
         padding: 2px;
         flex: 1;
-        font-size: 1.3em;
+        font-size: 2em;
+        color: #ffffff;
     }
     .contact form div input{
         flex: 3;
@@ -245,8 +307,21 @@
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.8);
         margin: 1px 0 0 2px;
-        font-size: 1em;
+        height: 36px;
+        font-size: 1.5em;
+    
     }
+    
+    .contact .form input[type="submit"] {
+       background-color: rgb(66, 66, 212);
+       border: none;
+       color: white;
+       padding: 6px 8px;
+       text-align: center;
+       border-radius: 2px;
+       font-size: 1.5em;
+    }
+    
     .contact form div input:focus{
         flex: 3;
         padding: 4px;
@@ -255,10 +330,17 @@
         margin: 1px 0 0 2px;
         outline: none;
     }
-    .contact form div textarea{
+    .contact form div textarea {
         flex: 3;
-
+        padding: 2px;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin: 1px 0 0 2px;
+        height: auto; /* Change height to 'auto' to allow the textarea to expand vertically */
+        min-height: 36px; /* Set a minimum height */
+        font-size: 1.5em;
     }
+    
     .contact form div textarea:focus{
         flex: 3;
         padding: 10px;
@@ -271,57 +353,80 @@
         font-size: 1.4em;
     }
     .experiences{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
+        margin:10px auto;
+        padding: 10px;
+        background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/experiences.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
-        margin: 10px 9px;
-        padding: 4px;
-        border-radius: 5px;
     }
     .experiences h2{
         font-size: 1.5em;
         font-weight: 700;   
-        color: #000;
+        text-align: center;
+        color: #ffffff;
         margin: 1px 0 0 2px;
         padding: 2px 6px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.8);
     }
     .experiences div{
-        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.2);
         margin: 10px 9px;
         padding: 5px;
         border-radius: 5px;
-
+        display: flex;
+        flex-direction: row;
+    
     }
-    .experiences div h3{
-        font-size: 1.4em;
+    
+    .experiences div .myExperiences{
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.2);
+        margin: 10px 9px;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .experiences div .myExperiences h3{
+        font-size: 1.2em;
         font-weight: 700;   
-        color: #000;
+        color: #ffffff;
         margin: 1px 0 0 2px;
     
     }
-    .experiences div p{
-        font-size:1.19em ;
+    .experiences div .myExperiences p{
+        font-size:1em ;
+        color: #ffffff;
         font-weight: 560;
     }
-    .experiences div ul li{
-        font-size:1.1em ;
+    .experiences div .myExperiences ul li{
+        font-size:1em ;
         font-weight: 500;
+        list-style:circle;
+        color: #ffffff;
     }
-    .experiences div button{
-        position: relative;
-        left: 2px;
-        top: 2px;
+    .experiences div .myExperiences .buttonReadmore{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: flex-end;
         
-
+    }
+    .experiences .myExperiences .buttonReadmore .button{
+        width: 50%;
+        margin: 1px;
+    
     }
     .languages{
         box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
         margin: 10px 9px;
         padding: 4px;
         border-radius: 5px;
+        display: none;
     }
     .languages h2{
         font-size: 1.5em;
@@ -351,6 +456,7 @@
         margin: 10px 9px;
         padding: 4px;
         border-radius: 5px;
+        display: none;
     }
     .educations h2{
         font-size: 1.5em;
@@ -422,7 +528,7 @@
 
 
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1000px) {
 .headerWrapper{
     display: flex;
     flex-direction: column;
@@ -433,7 +539,7 @@
     padding-bottom:4vh;
     margin: 4vh auto;
     border-radius: 1%;
-    background-image: linear-gradient( rgba(17, 17, 17), rgba(77, 73, 73, 0.5)), url("/human-hand-typing-computer-keyboard-night-generated-by-ai.jpg");
+    background-image: linear-gradient( rgba(17, 17, 17), rgba(77, 73, 73, 0.5)), url("/human-hand-typing-computer-keyboard-night-generated-by-ai.webp");
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
     background-repeat: no-repeat;
     background-size: cover;
@@ -617,7 +723,7 @@
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
     margin:10px auto;
     padding: 10px;
-    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/projects.jpg");
+    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/projects_1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -679,7 +785,7 @@
     margin:10px auto;
     padding: 10px;
     height: 80vh;
-    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/contactus.jpg");
+    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/contactus.webp");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -773,7 +879,7 @@
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0,0.4);
     margin:10px auto;
     padding: 10px;
-    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/experiences.jpeg");
+    background-image: linear-gradient( rgba(32, 32, 32, 0.6), rgba(17, 17, 17, 0.9)), url("/experiences.webp");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px auto;

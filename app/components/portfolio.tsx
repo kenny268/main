@@ -9,18 +9,16 @@ import Footer from './footer/footer';
 import AboutMe from './aboutMe/aboutMe';
 import Experiences from './experiences/experiences';
 import Header from './header/header';
-import LazyBackground from './optimizations/lazyloading';
-
 
 function Portfolio() {
 
   return (
     <>
-      <LazyBackground className={styles.headerWrapper} imageUrl="/human-hand-typing-computer-keyboard-night-generated-by-ai.jpgs">
+      <div className={styles.headerWrapper}>
         <Header/>
         <AboutMe/>
         
-      </LazyBackground>
+      </div>
         
       <div className={styles.about}>
           
